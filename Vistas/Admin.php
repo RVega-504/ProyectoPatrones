@@ -15,9 +15,10 @@
             <input type="submit" name="borrar" value="Borrar"><br>
         </form>
         <?php
-        require_once '../Controlador/ControladorUsuario.php';
+        require_once  '../Controlador/ControladorUsuario.php';
 
         $controlador = new ControladorUsuario();
+        //$controlador = ControladorUsuario::obtenerInstancia();
 
         if (isset($_POST["buscar"])) {
             $controlador->buscar();
