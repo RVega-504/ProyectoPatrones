@@ -16,15 +16,17 @@
             <a href="Registro.php">Registrate</a><br>
         </form>
         <?php
-        /*
         require_once '../Controlador/ControladorUsuario.php';
         
         $controlador = new ControladorUsuario();
         
         if(isset($_POST["ingresar"])){
-            $controlador->validarLogin($_POST["nombre"], $_POST["pass"]);
+            if($controlador->validarLogin($_POST["nombre"], $_POST["pass"])){
+                echo 'Usuario [', $_POST["nombre"], '] válido';
+            } else {
+                echo 'El usuario no existe!';
+            }
         }
-        */
         ?>
     </body>
 </html>
