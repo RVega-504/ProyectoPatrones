@@ -5,7 +5,7 @@ class ModeloUsuario {
     private $nombre;
     private $telefono;
     private $pass;
-
+    
     function __construct() {
         
     }

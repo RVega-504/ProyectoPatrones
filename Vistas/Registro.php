@@ -31,7 +31,8 @@
                     $usuario->setTelefono($_POST["telefono"]);
                     $usuario->setPass($_POST["pass"]);
                     
-                    $controlador->insertar($usuario);   
+                    $controlador->insertar($usuario);  
+                    echo 'Registro correcto';
                 } else {
                     echo 'ERROR';
                 }

@@ -25,6 +25,7 @@
 
         if (isset($_POST["borrar"])) {
             $controlador->eliminar($_POST["id"]);
+            echo 'Usuario [', $_POST["id"],'] eliminado correctamente' ;
         }
         ?>
     </body>
