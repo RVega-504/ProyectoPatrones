@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html>   
 <html>
     <head>
         <meta charset="UTF-8">
@@ -18,10 +17,9 @@
         <?php
         require_once '../Controlador/ControladorUsuario.php';
         
-        $controlador = new ControladorUsuario();
-        
-        if(isset($_POST["ingresar"])){
-            if($controlador->validarLogin($_POST["nombre"], $_POST["pass"])){
+        $controlador = new ControladorUsuario;        
+        if(isset($_POST["ingresar"])) {
+            if($controlador->validarLogin($_POST["nombre"], $_POST["pass"])) {
                 echo 'Usuario [', $_POST["nombre"], '] válido';
             } else {
                 echo 'El usuario no existe!';

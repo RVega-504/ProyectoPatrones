@@ -7,8 +7,11 @@
     </head>
     <body>
         <h2>Home</h2>
-        <a href="Vistas/Login.php">Login</a>
-        <a href="Vistas/Registro.php">Registrarse</a>
-        <a href="Vistas/Admin.php">Admin</a>
+        <ul>
+            <li><a href="Vistas/Login.php">Login</a></li>
+            <li><a href="Vistas/Registro.php">Registrarse</a></li>
+            <li><a href="Vistas/Admin.php">Admin</a></li>
+        </ul>
     </body>
 </html>
+ 

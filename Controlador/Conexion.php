@@ -1,5 +1,4 @@
 <?php
-
 class Conexion {
 
     private $servidor = 'localhost';
@@ -12,6 +11,5 @@ class Conexion {
         $this->con = new mysqli($this->servidor, $this->usuario, $this->clave,
                 $this->bd);
     }
-
 }
 

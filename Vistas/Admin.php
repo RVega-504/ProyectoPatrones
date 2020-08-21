@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -10,7 +9,7 @@
         <form action="" method="POST">
             <h3> ADMIN </h3>
             <label> Mostrar usuario registrados</label>
-            <input type="submit" name="buscar" value="Buscar"><br>
+            <input type="submit" name="buscar" value="Buscar"><br><br>
             <input type="number" name="id" placeholder="id">
             <input type="submit" name="borrar" value="Borrar"><br>
         </form>
@@ -18,8 +17,7 @@
         require_once  '../Controlador/ControladorUsuario.php';
 
         $controlador = new ControladorUsuario();
-        //$controlador = ControladorUsuario::obtenerInstancia();
-
+        
         if (isset($_POST["buscar"])) {
             $controlador->buscar();
         }

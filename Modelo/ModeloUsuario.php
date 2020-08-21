@@ -1,7 +1,6 @@
 <?php
-
 class ModeloUsuario {
-
+    
     private $nombre;
     private $telefono;
     private $pass;
@@ -33,6 +32,5 @@ class ModeloUsuario {
     function setPass($pass): void {
         $this->pass = $pass;
     }
-
 }
 

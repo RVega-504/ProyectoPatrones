@@ -1,21 +1,10 @@
 <?php
-
 require_once 'Conexion.php';
 require_once '../Modelo/ModeloUsuario.php';
 
 class ControladorUsuario extends Conexion {
     
-    /*
-    public static $instancia;
-    
-    public static function obtenerInstancia(){
-        if(!isset(self::$instancia)){
-             self::$instancia = new ControladorUsuario();
-        }
-        return self::$instancia;
-    }*/
-    
-    /*private*/ function __construct() {
+    function __construct() {
         parent::__construct();
     }
 
@@ -63,6 +52,3 @@ class ControladorUsuario extends Conexion {
         }
     }
 }
-
-/* $controlador = ControladorUsuario::obtenerInstancia();
-$controlador->buscar(); */
